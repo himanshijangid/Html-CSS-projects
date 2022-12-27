@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox_nested</title>
+    <style>
+        body{
+            background-color: rgb(244, 220, 220);
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .container{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .item{
+            width: auto;
+            height: 100px;
+            color: #fff;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 3px;
+            text-align: center;
+
+        }
+        .item1{
+            background-color: rgb(240, 63, 63); 
+        }
+        .item2{
+            background-color: rgb(242, 227, 16); 
+        }
+        .item3{
+            background-color: rgb(93, 240, 63);
+            display: flex;
+        }
+        .item4{
+            background-color: rgb(63, 149, 240);
+        }
+        .subitem1{
+            background-color: rgb(10, 37, 245); 
+        }
+        .subitem2{
+            background-color: rgb(243, 238, 165); 
+        }
+        .subitem3{
+            background-color: rgba(93, 240, 63, 0.355);
+            display: flex;
+        }
+        .subitem4{
+            background-color: rgb(231, 63, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: flexbox_nested</h1>
+    <div class="container">
+        <div class="item item1">One</div>
+        <div class="item item2">Two</div>
+        <div class="item item3">
+            <div class="item subitem1">A</div>
+            <div class="item subitem2">B</div>
+            <div class="item subitem3">C</div>
+            <div class="item subitem4">D</div>
+            </div>
+        <div class="item item4">Four</div>
+    </div>
+</body>
+</html>
